@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b35">
+<title>দিশারী কোণ | জ্ঞান ও তথ্যের ঠিকানা</title>
+<style>
+:root{--green:#173b35;--green2:#24584d;--gold:#e9b95d;--paper:#f7f7f2;--ink:#1d2926;--muted:#697570;--line:#e4e9e4;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali","Hind Siliguri",sans-serif;line-height:1.65}
+a{color:inherit}.top{background:var(--green);color:white}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}.brand{font-size:25px;font-weight:800;letter-spacing:.2px}.brand small{display:block;font-size:11px;font-weight:400;color:#c9d8d2;letter-spacing:1px}.navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.navlinks a{text-decoration:none;color:#e7efeb;font-size:14px}.btn{border:0;border-radius:10px;padding:10px 16px;background:var(--gold);color:#25332d;font-weight:750;cursor:pointer}.btn.dark{background:var(--green);color:white}.btn.light{background:#edf3ef;color:var(--green)}.hero{padding:58px 0 66px;background:radial-gradient(ellipse at 85% 10%,#397266 0,transparent 42%),var(--green);color:white}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.2;margin:0 0 14px}.hero p{color:#d9e6df;max-width:650px;margin:0 0 24px}.search{display:flex;max-width:600px;background:white;border-radius:12px;padding:6px;gap:6px}.search input{flex:1;min-width:0;border:0;outline:0;padding:10px 12px;font:inherit}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid #64877e;color:#e6f0eb;border-radius:30px;padding:6px 12px;font-size:13px}.section{padding:38px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.section h2{margin:0;font-size:25px}.sub{color:var(--muted);font-size:14px;margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 18px #183a3010}.card .icon{width:42px;height:42px;border-radius:12px;background:#edf4ef;display:grid;place-items:center;font-size:22px;margin-bottom:12px}.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.items{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.item{background:white;border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.item h3{font-size:17px;margin:0 0 7px;overflow-wrap:anywhere}.item p{font-size:14px;color:var(--muted);margin:0 0 12px;white-space:pre-wrap}.item a{display:inline-block;color:var(--green2);font-weight:700;text-decoration:none;font-size:14px}.tag{font-size:11px;color:#537067;background:#edf4ef;padding:4px 9px;border-radius:20px;display:inline-block;margin-bottom:9px}.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #cbd5ce;border-radius:14px;grid-column:1/-1}.video{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#e9eeea}.footer{background:#102c27;color:#d5e1dc;padding:30px 0;margin-top:30px}.footer p{margin:4px 0;color:#aebfb8;font-size:13px}.admin{display:none;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin:20px auto}.admin.show{display:block}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.tab{padding:8px 12px;border:1px solid var(--line);border-radius:9px;background:white;cursor:pointer}.tab.active{background:var(--green);color:white}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700}.field input,.field textarea{font:inherit;padding:10px;border:1px solid #d6dfd8;border-radius:9px;width:100%}.field textarea{min-height:100px;resize:vertical}.notice{font-size:13px;color:var(--muted);margin:8px 0}.status{font-size:13px;margin:10px 0}.hidden{display:none!important}
+@media(max-width:760px){.grid,.items{grid-template-columns:1fr 1fr}.nav{align-items:flex-start}.navlinks{gap:10px}.hero{padding:42px 0}.formgrid{grid-template-columns:1fr}}
+@media(max-width:480px){.grid,.items{grid-template-columns:1fr}.brand{font-size:21px}.navlinks a{font-size:12px}.sectionhead{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap nav">
+  <div class="brand">দিশারী কোণ<small>জ্ঞান, শিক্ষা ও তথ্যের মুক্ত ঠিকানা</small></div>
+  <nav class="navlinks"><a href="#books">বই</a><a href="#videos">ভিডিও</a><a href="#news">সংবাদ</a><button class="btn" id="adminOpen">অ্যাডমিন</button></nav>
+ </div>
+</header>
+<section class="hero">
+ <div class="wrap">
+  <h1>জানার পথ হোক<br>আরও আলোকিত</h1>
+  <p>বই পড়ুন, নতুন কিছু শিখুন, আর দেশ-বিদেশের খবর জানুন—সবকিছু এক জায়গায়, সবার জন্য।</p>
+  <div class="search"><input id="searchInput" placeholder="বই, ভিডিও বা সংবাদ খুঁজুন..." aria-label="সার্চ"><button class="btn dark" id="searchBtn">খুঁজুন</button></div>
+  <div class="chips"><span class="chip">📚 PDF বই</span><span class="chip">▶ ভিডিও ক্লাস</span><span class="chip">📰 সংবাদ</span><span class="chip">সবার জন্য উন্মুক্ত</span></div>
+ </div>
+</section>
+<main class="wrap">
+ <section class="section">
+  <div class="sectionhead"><div><h2>এখানে যা পাবেন</h2><p class="sub">জ্ঞান ও তথ্যের বিভিন্ন আয়োজন</p></div></div>
+  <div class="grid">
+   <article class="card"><div class="icon">📚</div><h3>বই ও PDF</h3><p>বিভিন্ন বিষয়ের বই পড়ুন অথবা PDF ডাউনলোড করুন।</p></article>
+   <article class="card"><div class="icon">🎬</div><h3>ভিডিও ক্লাস</h3><p>বিষয়ভিত্তিক পাঠ, আলোচনা ও শিক্ষামূলক ভিডিও দেখুন।</p></article>
+   <article class="card"><div class="icon">📰</div><h3>সংবাদ ও তথ্য</h3><p>গুরুত্বপূর্ণ খবর, লেখা ও সাম্প্রতিক তথ্য পড়ুন।</p></article>
+  </div>
+ </section>
+ <section class="section" id="books"><div class="sectionhead"><div><h2>📚 বইয়ের সংগ্রহ</h2><p class="sub">নতুন ও প্রয়োজনীয় বই</p></div></div><div class="items" id="bookList"><div class="empty">বই লোড হচ্ছে...</div></div></section>
+ <section class="section" id="videos"><div class="sectionhead"><div><h2>🎬 ভিডিও ক্লাস</h2><p class="sub">দেখুন ও শিখুন</p></div></div><div class="items" id="videoList"><div class="empty">ভিডিও লোড হচ্ছে...</div></div></section>
+ <section class="section" id="news"><div class="sectionhead"><div><h2>📰 সংবাদ ও লেখা</h2><p class="sub">সর্বশেষ প্রকাশনা</p></div></div><div class="items" id="newsList"><div class="empty">সংবাদ লোড হচ্ছে...</div></div></section>
+ <section class="admin" id="adminPanel">
+  <div class="sectionhead"><div><h2>অ্যাডমিন প্যানেল</h2><p class="sub">শুধু অনুমোদিত অ্যাডমিন কনটেন্ট প্রকাশ করতে পারবেন।</p></div><button class="btn light" id="logoutBtn">লগআউট</button></div>
+  <div id="loginArea">
+   <div class="formgrid"><div class="field"><label>ইমেইল</label><input id="email" type="email" autocomplete="username"></div><div class="field"><label>পাসওয়ার্ড</label><input id="password" type="password" autocomplete="current-password"></div></div>
+   <p class="notice">Supabase-এ আগে তৈরি করা অ্যাডমিন অ্যাকাউন্ট দিয়ে লগইন করুন।</p><button class="btn dark" id="loginBtn">লগইন</button>
+  </div>
+  <div id="editorArea" class="hidden">
+   <div class="tabs"><button class="tab active" data-tab="bookForm">PDF বই</button><button class="tab" data-tab="videoForm">ভিডিও</button><button class="tab" data-tab="newsForm">সংবাদ</button></div>
+   <form id="bookForm"><div class="formgrid"><div class="field"><label>বইয়ের নাম</label><input name="title" required maxlength="150"></div><div class="field"><label>লেখক / উৎস</label><input name="author" maxlength="120"></div><div class="field full"><label>সংক্ষিপ্ত বিবরণ</label><textarea name="description"></textarea></div><div class="field full"><label>PDF ফাইল</label><input name="file" type="file" accept="application/pdf" required></div></div><p class="notice">শুধু নিজের তৈরি বা প্রকাশ/বিতরণের অনুমতি আছে এমন PDF আপলোড করুন।</p><button class="btn dark">বই প্রকাশ করুন</button></form>
+   <form id="videoForm" class="hidden"><div class="formgrid"><div class="field full"><label>ভিডিওর শিরোনাম</label><input name="title" required maxlength="150"></div><div class="field full"><label>YouTube ভিডিও লিংক</label><input name="url" type="url" required placeholder="https://www.youtube.com/watch?v=..."></div><div class="field full"><label>বিবরণ</label><textarea name="description"></textarea></div></div><button class="btn dark">ভিডিও প্রকাশ করুন</button></form>
+   <form id="newsForm" class="hidden"><div class="formgrid"><div class="field full"><label>শিরোনাম</label><input name="title" required maxlength="180"></div><div class="field full"><label>সংবাদের লেখা</label><textarea name="body" required></textarea></div><div class="field full"><label>ছবির URL (ঐচ্ছিক)</label><input name="image_url" type="url" placeholder="https://..."></div></div><button class="btn dark">সংবাদ প্রকাশ করুন</button></form>
+   <p class="status" id="adminStatus" aria-live="polite"></p>
+  </div>
+ </section>
+</main>
+<footer class="footer"><div class="wrap"><strong>দিশারী কোণ</strong><p>জ্ঞান, শিক্ষা ও তথ্য সবার কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।</p><p>© <span id="year"></span> দিশারী কোণ। সর্বস্বত্ব সংরক্ষিত।</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* সেটআপ: নিচের দুটি মান Supabase Project Settings → API থেকে বসান। */
+const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
+const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_PUBLIC_KEY";
+const configured = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("YOUR_") && !SUPABASE_ANON_KEY.includes("YOUR_");
+const db = configured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+const $ = id => document.getElementById(id);
+$("year").textContent = new Date().getFullYear();
+const esc = s => String(s ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function status(msg){$("adminStatus").textContent=msg}
+function empty(msg){return `<div class="empty">${msg}</div>`}
+function ytEmbed(url){try{const u=new URL(url);let id=u.hostname.includes("youtu.be")?u.pathname.slice(1):u.searchParams.get("v");if(u.pathname.includes("/embed/"))id=u.pathname.split("/embed/")[1];return id&&/^[\w-]{6,}$/.test(id)?`https://www.youtube-nocookie.com/embed/${id}`:null}catch{return null}}
+async function loadAll(){
+ if(!db){$("bookList").innerHTML=empty("ওয়েবসাইট চালু করতে README ফাইলের Supabase সেটআপ সম্পন্ন করুন।");$("videoList").innerHTML=empty("ভিডিও প্রকাশিত হলে এখানে দেখা যাবে।");$("newsList").innerHTML=empty("সংবাদ প্রকাশিত হলে এখানে দেখা যাবে।");return}
+ const [b,v,n]=await Promise.all([
+  db.from("books").select("*").order("created_at",{ascending:false}),
+  db.from("videos").select("*").order("created_at",{ascending:false}),
+  db.from("news").select("*").order("created_at",{ascending:false})
+ ]);
+ $("bookList").innerHTML=b.error?empty("বই লোড করা যায়নি।"):b.data.length?b.data.map(x=>`<article class="item" data-search="${esc(x.title+" "+(x.author||"")+" "+(x.description||""))}"><span class="tag">PDF বই</span><h3>${esc(x.title)}</h3><p>${esc(x.author||"")}${x.description?" · "+esc(x.description):""}</p><a href="${esc(x.file_url)}" target="_blank" rel="noopener">PDF খুলুন / ডাউনলোড ↗</a></article>`).join(""):empty("এখনো কোনো বই যোগ করা হয়নি।");
+ $("videoList").innerHTML=v.error?empty("ভিডিও লোড করা যায়নি।"):v.data.length?v.data.map(x=>{const e=ytEmbed(x.url);return `<article class="item" data-search="${esc(x.title+" "+(x.description||""))}"><span class="tag">ভিডিও</span><h3>${esc(x.title)}</h3>${e?`<iframe class="video" src="${e}" title="${esc(x.title)}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`:`<a href="${esc(x.url)}" target="_blank" rel="noopener">ভিডিও দেখুন ↗</a>`}<p>${esc(x.description||"")}</p></article>`}).join(""):empty("এখনো কোনো ভিডিও যোগ করা হয়নি।");
+ $("newsList").innerHTML=n.error?empty("সংবাদ লোড করা যায়নি।"):n.data.length?n.data.map(x=>`<article class="item" data-search="${esc(x.title+" "+x.body)}"><span class="tag">সংবাদ / লেখা</span><h3>${esc(x.title)}</h3>${x.image_url?`<img src="${esc(x.image_url)}" alt="" style="width:100%;border-radius:9px;max-height:190px;object-fit:cover">`:""}<p>${esc(x.body)}</p><small style="color:#718078">${new Date(x.created_at).toLocaleDateString("bn-BD")}</small></article>`).join(""):empty("এখনো কোনো সংবাদ প্রকাশিত হয়নি।");
+}
+$("adminOpen").onclick=()=>{$("adminPanel").classList.toggle("show");$("adminPanel").scrollIntoView({behavior:"smooth",block:"start"})};
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===t));["bookForm","videoForm","newsForm"].forEach(id=>$(id).classList.toggle("hidden",id!==t.dataset.tab));status("")});
+$("loginBtn").onclick=async()=>{if(!db)return status("আগে Supabase URL ও anon key বসান।");const {error}=await db.auth.signInWithPassword({email:$("email").value,password:$("password").value});if(error)return status(error.message);$("loginArea").classList.add("hidden");$("editorArea").classList.remove("hidden");status("লগইন সফল।")};
+$("logoutBtn").onclick=async()=>{if(db)await db.auth.signOut();$("loginArea").classList.remove("hidden");$("editorArea").classList.add("hidden");status("লগআউট করা হয়েছে।")};
+async function isAdmin(){if(!db)return false;const {data}=await db.auth.getSession();return data.session?.user?.app_metadata?.role==="admin"}
+$("bookForm").onsubmit=async e=>{e.preventDefault();if(!await isAdmin())return status("অ্যাডমিন অনুমতি পাওয়া যায়নি।");const f=new FormData(e.target),file=f.get("file");if(file.size>50*1024*1024)return status("PDF সর্বোচ্চ ৫০ MB হতে পারবে।");status("PDF আপলোড হচ্ছে...");const path=`${crypto.randomUUID()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,"_")}`;let up=await db.storage.from("library").upload(path,file,{contentType:"application/pdf",upsert:false});if(up.error)return status(up.error.message);const {data}=db.storage.from("library").getPublicUrl(path);const ins=await db.from("books").insert({title:f.get("title"),author:f.get("author"),description:f.get("description"),file_url:data.publicUrl,storage_path:path});if(ins.error)return status(ins.error.message);e.target.reset();status("বই প্রকাশিত হয়েছে।");loadAll()};
+$("videoForm").onsubmit=async e=>{e.preventDefault();if(!await isAdmin())return status("অ্যাডমিন অনুমতি পাওয়া যায়নি।");const f=new FormData(e.target);if(!ytEmbed(f.get("url")))return status("সঠিক YouTube লিংক দিন।");const {error}=await db.from("videos").insert({title:f.get("title"),url:f.get("url"),description:f.get("description")});if(error)return status(error.message);e.target.reset();status("ভিডিও প্রকাশিত হয়েছে।");loadAll()};
+$("newsForm").onsubmit=async e=>{e.preventDefault();if(!await isAdmin())return status("অ্যাডমিন অনুমতি পাওয়া যায়নি।");const f=new FormData(e.target);const {error}=await db.from("news").insert({title:f.get("title"),body:f.get("body"),image_url:f.get("image_url")||null});if(error)return status(error.message);e.target.reset();status("সংবাদ প্রকাশিত হয়েছে।");loadAll()};
+function search(){const q=$("searchInput").value.trim().toLocaleLowerCase();document.querySelectorAll("[data-search]").forEach(el=>el.style.display=el.dataset.search.toLocaleLowerCase().includes(q)?"":"none")}
+$("searchBtn").onclick=search;$("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")search()});
+loadAll();
+</script>
+</body></html>
